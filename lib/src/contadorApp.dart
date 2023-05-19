@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 void main() {
   runApp(MyApp());
 }
@@ -158,5 +159,7 @@ class _ContadorState extends State<Contador> with SingleTickerProviderStateMixin
   }
 }
 hola mundo
+=======
+>>>>>>> rama-1
        
 
