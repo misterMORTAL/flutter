@@ -1,0 +1,60 @@
+{
+   "checksum": "0e1b3711aa5b7b504d13e7c493235460",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13276237144259510",
+            "date_last_used": "0",
+            "guid": "c9fb7daa-1000-45de-aa05-3e6a6058c0c5",
+            "id": "6",
+            "name": "How to install Plutonium Mod - Plutonium Project",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://plutonium.pw/docs/install/#t6"
+         }, {
+            "date_added": "13282101782696741",
+            "date_last_used": "0",
+            "guid": "c04dd61e-c45e-4056-90d8-97cb91fbc6a8",
+            "id": "7",
+            "name": "Nueva pestaña",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "edge://newtab/"
+         } ],
+         "date_added": "13329205281344284",
+         "date_last_used": "0",
+         "date_modified": "13282101782696741",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13329205281344288",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Otros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13329205281344292",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos móviles",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCNUYpkGIAQAAKg4QABgBIAIoBDAAOABAABIAIAEqGG5lTWt0elIybW5TanQxTXN4eVRhZnc9PaAGDBKnAQgGEqIBChxtZFhOWm1URGVaaUtGOEJtdTQyYUhDNlozTE09EiRjOWZiN2RhYS0xMDAwLTQ1ZGUtYWEwNS0zZTZhNjA1OGMwYzUYACACKAIw9YfXjoQxOLjbxYrrL0D9+9aOhDFKHHJwSnlibnFUZCtrdFBjVjBHTE56Q0dncGpCYz1aHiIcVVNGQkFhdDQzamRFc25zYUJsc2pnT3Y2LzcwPWVoG3JWEokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDk4NGQ5ZWNhLWNkNTItNTliMS1iODZlLTYxZDA5N2IxNzE5ZBgAIAAoADCoup6mrC440pTFiusvQNKUxYrrL0ocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqAEIBxKjAQocN3k1NWxYNmE4OWtZNW9YeUpnQU1FU1M0R000PRIkYzA0ZGQ2MWUtYzQ1ZS00MDU2LTkwZDgtOTdjYjkxZmJjNmE4GAAgACgAMOTrtuHnMDjq38WK6y9A6t/FiusvShxqemNPelE1TDErbWlZNUE2YkJaZU5nOUQrU009Wh8iHao5K1lWUVcrSmtyZGgyR1VKcjA4UkdxOFltYXc9ZdivsAISiQEIAhKEAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkYzViNWQ2YzAtODgwYy01NTAwLWExODItMWM1ZTVjYzdiNGE1GAAgACgAMKm6nqasLjjxlMWK6y9A8ZTFiusvShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKJAQgDEoQBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQzMWJjYWEwNC02NDEwLTUxZGQtODAwMC1jMjZmNWY5NzY3ZTUYACAAKAAwrbqepqwuOM+VxYrrL0DPlcWK6y9KHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAMAA4AA==",
+   "version": 1
+}

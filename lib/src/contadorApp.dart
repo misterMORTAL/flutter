@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  static const String _title = 'Contador';
+  static const String _title = 'TAREA 2';
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: _title,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: Contador(),
     );
@@ -65,12 +64,32 @@ class _ContadorState extends State<Contador> with SingleTickerProviderStateMixin
     });
   }
 
+  void mostrarAlerta() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Alerta'),
+          content: Text('El Castillo Ambulante" es una película de animación del Studio Ghibli dirigida por Hayao Miyazaki.'),
+          actions: [
+            TextButton(
+              child: Text('Cerrar'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'CUARTO C',
+          'TAREA 2 por José Araujo',
           style: TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
@@ -78,30 +97,26 @@ class _ContadorState extends State<Contador> with SingleTickerProviderStateMixin
           ),
         ),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 117, 243, 33),
+        backgroundColor: Color.fromARGB(255, 33, 243, 226),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'CONTADOR EN : $_contar',
+              'Studio Ghibli es un renombrado estudio de animación japonés fundado en 1985 por Hayao Miyazaki e Isao Takahata.',
               style: TextStyle(fontSize: 35.0, color: Colors.blue),
             ),
             SizedBox(height: 20.0),
             GestureDetector(
-              onTap: () {
-                _animationController.reset();
-                _animationController.forward();
-                incrementarContador();
-              },
+              onTap: mostrarAlerta,
               child: RotationTransition(
                 turns: _rotationAnimation,
                 child: ScaleTransition(
                   scale: _scaleAnimation,
                   child: CircleAvatar(
-                    radius: 80.0,
-                    child: Image.asset('assets/gibli.jpg'),
+                    radius: 100.0,
+                    backgroundImage: AssetImage('assets/gibli.jpg'),
                   ),
                 ),
               ),
@@ -109,54 +124,34 @@ class _ContadorState extends State<Contador> with SingleTickerProviderStateMixin
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: const Color.fromARGB(255, 243, 33, 243),
-        shape: CircularNotchedRectangle(),
-        child: Container(
-          height: 50.0,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              IconButton(
-                icon: Icon(Icons.restore),
-                onPressed: restablecerContador,
-                tooltip: 'Restablecer contador',
-                color: Colors.white,
-              ),
-              GestureDetector(
-                onTapDown: (details) {
-                  _animationController.forward();
-                },
-                onTapUp: (details) {
-                  _animationController.reverse();
-                  incrementarContador();
-                },
-                onTapCancel: () {
-                  _animationController.reverse();
-                },
-                child: ScaleTransition(
-                  scale: _scaleAnimation,
-                  child: IconButton(
-                    icon: Icon(Icons.add),
-                    onPressed: null,
-                    tooltip: 'Incrementar contador',
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ],
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            child: Icon(Icons.add),
+            onPressed: incrementarContador,
           ),
-        ),
+          SizedBox(height: 10.0),
+          FloatingActionButton(
+            child: Icon(Icons.refresh),
+            onPressed: restablecerContador,
+          ),
+          SizedBox(height: 10.0),
+          FloatingActionButton(
+            child: Icon(Icons.close),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          SizedBox(height: 10.0),
+          FloatingActionButton(
+            child: Icon(Icons.warning),
+            onPressed: mostrarAlerta,
+          ),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: incrementarContador,
-        tooltip: 'Incrementar contador',
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
     );
   }
 }
-
-       
-
